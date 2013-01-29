@@ -55,34 +55,12 @@ dfn {
   font-style: italic;
 }
 
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-
-small {
-  font-size: 80%;
-}
-
 img {
   border: 0;
 }
 
 figure {
   margin: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 ul {
@@ -96,13 +74,17 @@ li {
 
 /*****/
 
+.container {
+  
+}
+
 .solar-system {
-  position: relative;
-  height: 1000px;
-  width: 1000px;
+  height: 2314px;
+  width: 2314px;
   margin: 0 auto;
-/*  left: 50px;
-  margin-left: -550px;*/
+ /* position: absolute;
+  left: -1157px;
+  top: -770px;*/
 }
 
 .planet {
@@ -118,7 +100,7 @@ li {
 }
 
 .orbit {
-  border: 1px solid red;
+  border: 1px solid blue;
   position: absolute;
   border-radius: 50%;
   text-align: center;
@@ -137,10 +119,10 @@ li {
 
 /*****/
 .sun {
-  height: 100px;
-  width: 100px;
-  top: 450px;
-  left: 450px;
+  height: 570px;
+  width: 570px;
+  top: 872px;
+  left: 872px;
   background: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
   background: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
   background: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
@@ -148,121 +130,121 @@ li {
 
 /*****/
 .mercury {
-  height: 20px;
-  width: 20px;
+  height: 2px;
+  width: 2px;
   bottom: 50%;
-  right: -10px;
+  right: -1px;
   background: red;
 }
 
 .mercury-orbit {
-  height: 200px;
-  width: 200px;
-  top: 400px;
-  left: 400px;
-  -webkit-animation-duration:10s;
+  height: 586px;
+  width: 586px;
+  top: 864px;
+  left: 864px;
+  -webkit-animation-duration:22s;
 }
 
 /*****/
 .venus {
-  height: 20px;
-  width: 20px;
+  height: 5px;
+  width: 5px;
   bottom: 50%;
-  right: -10px;
+  right: -2.5px;
   background: green;
 }
 
 .venus-orbit {
-  height: 300px;
-  width: 300px;
-  top: 350px;
-  left: 350px;
-  -webkit-animation-duration:20s;
+  height: 602px;
+  width: 602px;
+  top: 856px;
+  left: 856px;
+  -webkit-animation-duration:56s;
 }
 
 /*****/
 .earth {
-  height: 20px;
-  width: 20px;
+  height: 5px;
+  width: 5px;
   bottom: 50%;
-  right: -10px;
+  right: -2.5px;
   background: blue;
 }
 
 .earth-orbit {
-  height: 400px;
-  width: 400px;
-  top: 300px;
-  left: 300px;
-  -webkit-animation-duration:30s;
+  height: 614px;
+  width: 614px;
+  top: 850px;
+  left: 850px;
+  -webkit-animation-duration:91s;
 }
 
 /*****/
 .mars {
-  height: 20px;
-  width: 20px;
+  height: 3px;
+  width: 3px;
   bottom: 50%;
-  right: -10px;
+  right: -1.5px;
   background: red;
 }
 
 .mars-orbit {
-  height: 500px;
-  width: 500px;
-  top: 250px;
-  left: 250px;
-  -webkit-animation-duration:15s;
+  height: 634px;
+  width: 634px;
+  top: 840px;
+  left: 840px;
+  -webkit-animation-duration:172s;
 }
 
 /*****/
 .jupiter {
-  height: 20px;
-  width: 20px;
+  height: 58px;
+  width: 58px;
   bottom: 50%;
-  right: -10px;
+  right: -29px;
   background: orange;
 }
 
 .jupiter-orbit {
-  height: 600px;
-  width: 600px;
-  top: 200px;
-  left: 200px;
-  -webkit-animation-duration:18s;
+  height: 790px;
+  width: 790px;
+  top: 762px;
+  left: 762px;
+  -webkit-animation-duration:1083s;
 }
 
 /*****/
 .saturn {
-  height: 20px;
-  width: 20px;
+  height: 50px;
+  width: 50px;
   bottom: 50%;
-  right: -10px;
+  right: -25px;
   background: gray;
 }
 
 .saturn-orbit {
-  height: 700px;
-  width: 700px;
-  top: 150px;
-  left: 150px;
-  -webkit-animation-duration:25s;
+  height: 974px;
+  width: 974px;
+  top: 670px;
+  left: 670px;
+  -webkit-animation-duration:2690s;
 }
 
 /*****/
 .uranus {
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   bottom: 50%;
-  right: -10px;
+  right: -11px;
   background: white;
 }
 
 .uranus-orbit {
-  height: 800px;
-  width: 800px;
-  top: 100px;
-  left: 100px;
-  -webkit-animation-duration:22s;
+  height: 1378px;
+  width: 1378px;
+  top: 468px;
+  left: 468px;
+  -webkit-animation-duration:7671s;
 }
 
 /*****/
@@ -275,11 +257,11 @@ li {
 }
 
 .neptune-orbit {
-  height: 900px;
-  width: 900px;
-  top: 50px;
-  left: 50px;
-  -webkit-animation-duration:19s;
+  height: 1834px;
+  width: 1834px;
+  top: 240px;
+  left: 240px;
+  -webkit-animation-duration:15048s;
 }
 
 /*****/
@@ -292,11 +274,9 @@ li {
 }
 
 .pluto-orbit {
-  height: 1000px;
-  width: 1000px;
-  top: 0;
-  left: 0;
-  -webkit-animation-duration:30s;
+  height: 2314px;
+  width: 2314px;
+  -webkit-animation-duration:22616s;
 }
 
 @-webkit-keyframes orbit { 
