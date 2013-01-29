@@ -69,27 +69,31 @@ ul {
 }
 
 li {
-  /*display: inline-block;*/
+
 }
 
 /*****/
-
-.container {
-  
-}
 
 .solar-system {
   height: 2314px;
   width: 2314px;
   margin: 0 auto;
- /* position: absolute;
-  left: -1157px;
-  top: -770px;*/
+/*  position: absolute;
+  top: -50%;
+  left: -50%;*/
 }
 
 .planet {
   position: absolute;
   border-radius: 50%;
+  bottom: 50%;
+}
+
+.planet-drop-shadow {
+  /*Liberally borrowed from Nicholas Gallagher - http://nicolasgallagher.com/css-pseudo-element-solar-system/demo/*/
+  -webkit-box-shadow:inset -10px 0 10px rgba(0,0,0,0.75);
+  -moz-box-shadow:inset -10px 0 10px rgba(0,0,0,0.75);
+  box-shadow:inset -10px 0 10px rgba(0,0,0,0.75);
 }
 
 .planet-names {
@@ -97,10 +101,13 @@ li {
   padding: 0;
   float: left;
   border: 2px solid yellow;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .orbit {
-  border: 1px solid blue;
+  border: 1px solid #3D3D3D;
   position: absolute;
   border-radius: 50%;
   text-align: center;
@@ -132,9 +139,8 @@ li {
 .mercury {
   height: 2px;
   width: 2px;
-  bottom: 50%;
   right: -1px;
-  background: red;
+  background: #969696;
 }
 
 .mercury-orbit {
@@ -149,9 +155,8 @@ li {
 .venus {
   height: 5px;
   width: 5px;
-  bottom: 50%;
   right: -2.5px;
-  background: green;
+  background: #FFFF99;
 }
 
 .venus-orbit {
@@ -166,9 +171,8 @@ li {
 .earth {
   height: 5px;
   width: 5px;
-  bottom: 50%;
   right: -2.5px;
-  background: blue;
+  background: #14B1FF;
 }
 
 .earth-orbit {
@@ -183,9 +187,8 @@ li {
 .mars {
   height: 3px;
   width: 3px;
-  bottom: 50%;
   right: -1.5px;
-  background: red;
+  background: #CC3300;
 }
 
 .mars-orbit {
@@ -200,9 +203,8 @@ li {
 .jupiter {
   height: 58px;
   width: 58px;
-  bottom: 50%;
   right: -29px;
-  background: orange;
+  background: #FF6F0F;
 }
 
 .jupiter-orbit {
@@ -217,9 +219,8 @@ li {
 .saturn {
   height: 50px;
   width: 50px;
-  bottom: 50%;
   right: -25px;
-  background: gray;
+  background: #FFFFB3;
 }
 
 .saturn-orbit {
@@ -234,9 +235,8 @@ li {
 .uranus {
   height: 22px;
   width: 22px;
-  bottom: 50%;
   right: -11px;
-  background: white;
+  background: #14B1FF;
 }
 
 .uranus-orbit {
@@ -251,9 +251,8 @@ li {
 .neptune {
   height: 20px;
   width: 20px;
-  bottom: 50%;
   right: -10px;
-  background: purple;
+  background: #0085C7;
 }
 
 .neptune-orbit {
@@ -266,16 +265,17 @@ li {
 
 /*****/
 .pluto {
-  height: 20px;
-  width: 20px;
-  bottom: 50%;
-  right: -10px;
-  background: brown;
+  height: 1px;
+  width: 1px;
+  right: -0.5px;
+  background: #D1A375;
 }
 
 .pluto-orbit {
   height: 2314px;
   width: 2314px;
+  top: 0;
+  left: 0;
   -webkit-animation-duration:22616s;
 }
 
