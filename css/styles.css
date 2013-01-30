@@ -69,18 +69,24 @@ ul {
 }
 
 li {
-
+  display: inline;
 }
 
 /*****/
+
+.container {
+  height: 2600px;
+  width: 2600px;
+}
 
 .solar-system {
   height: 2314px;
   width: 2314px;
   margin: 0 auto;
-/*  position: absolute;
-  top: -50%;
-  left: -50%;*/
+  position: absolute;
+  top: -75%;
+  left: -50%;
+  pointer-events: none;
 }
 
 .planet {
@@ -89,7 +95,11 @@ li {
   bottom: 50%;
 }
 
-.planet-drop-shadow {
+.planet-name {
+  margin: 10px;
+}
+
+.planet-shadow {
   /*Liberally borrowed from Nicholas Gallagher - http://nicolasgallagher.com/css-pseudo-element-solar-system/demo/*/
   -webkit-box-shadow:inset -10px 0 10px rgba(0,0,0,0.75);
   -moz-box-shadow:inset -10px 0 10px rgba(0,0,0,0.75);
@@ -98,19 +108,19 @@ li {
 
 .planet-names {
   margin: 0 auto;
-  padding: 0;
-  float: left;
-  border: 2px solid yellow;
-  position: fixed;
+  padding: 2px;
+/*  float: left;*/
+/*  position: fixed;
   top: 0;
-  left: 0;
+  left: 0;*/
+  /*background: green;*/
+  z-index: 1;
 }
 
 .orbit {
   border: 1px solid #3D3D3D;
   position: absolute;
   border-radius: 50%;
-  text-align: center;
   margin: 0;
   padding: 0;
 
@@ -122,6 +132,15 @@ li {
   -moz-animation-timing-function:linear;
   -moz-animation-name:orbit;
   -moz-animation-duration:5s;
+}
+
+.active-list-item {
+  color: #FF7142;
+}
+
+.active-orbit {
+  color: yellow;
+  border: 1px solid #FF7142;
 }
 
 /*****/
