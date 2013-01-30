@@ -1,71 +1,66 @@
  <!DOCTYPE html>
-<head>
+ <head>
   <title>The Solar System [dankim]</title>
   <meta charset="UTF-8">
 
   <link href="css/styles.css" media="screen" rel="stylesheet" type="text/css">
+  
   <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
   <script>
     $(document).ready(function() {
       $('ul#planet-names li').hover(
         function() { 
-           // alert('testing');
           $(this).toggleClass('active-list-item');
           $('li#orbit-' + $(this).attr('id')).toggleClass('active-orbit');
         }
-      ) 
-
+        ) 
     });
   </script>
 </head>
 <body>
-  <div class="container">
-    <section class="planet-names">
-      <ul id="planet-names">
-        <li id="mercury" class="planet-name">Mercury</li>
-        <li id="venus" class="planet-name">Venus</li>
-        <li id="earth" class="planet-name">Earth</li>
-        <li id="mars" class="planet-name">Mars</li>
-        <li id="jupiter" class="planet-name">Jupiter</li>
-        <li id="saturn" class="planet-name">Saturn</li>
-        <li id="uranus" class="planet-name">Uranus</li>
-        <li id="neptune" class="planet-name">Neptune</li>
-        <li id="pluto" class="planet-name">Pluto</li>
-      </ul>    
-    </section>
-    <section class="solar-system">
-      <ul id="planet-orbits">
-        <li class="orbit sun"></li>
-        <li id="orbit-mercury" class="orbit mercury-orbit">
-          <div class="planet mercury"></div>
-        </li>
-        <li id="orbit-venus" class="orbit venus-orbit"> 
-          <div class="planet venus"></div>
-        </li>
-        <li id="orbit-earth" class="orbit earth-orbit">
-          <div class="planet earth"></div>
-        </li>
-        <li id="orbit-mars" class="orbit mars-orbit">
-          <div class="planet mars"></div>
-        </li>
-        <li id="orbit-jupiter" class="orbit jupiter-orbit">
-          <div class="planet jupiter planet-shadow"></div>
-        </li>
-        <li id="orbit-saturn" class="orbit saturn-orbit">
-          <div class="planet saturn planet-shadow"></div>
-        </li>
-        <li id="orbit-uranus" class="orbit uranus-orbit">
-          <div class="planet uranus planet-shadow"></div>
-        </li>
-        <li id="orbit-neptune" class="orbit neptune-orbit">
-          <div class="planet neptune planet-shadow"></div>
-        </li>
-        <li id="orbit-pluto" class="orbit pluto-orbit">
-          <div class="planet pluto"></div>
-        </li>
-      </ul>    
-    </section>
-  </div>
-
-
+  <section class="name-list">
+    <ul id="planet-names">
+      <li id="mercury" class="text-spacer">Mercury</li>
+      <li id="venus" class="text-spacer">Venus</li>
+      <li id="earth" class="text-spacer">Earth</li>
+      <li id="mars" class="text-spacer">Mars</li>
+      <li id="jupiter" class="text-spacer">Jupiter</li>
+      <li id="saturn" class="text-spacer">Saturn</li>
+      <li id="uranus" class="text-spacer">Uranus</li>
+      <li id="neptune" class="text-spacer">Neptune</li>
+      <li id="pluto" class="text-spacer">Pluto</li>
+    </ul>    
+  </section>
+  <section class="solar-system">
+    <ul id="planet-orbits">
+      <li class="orbit sun"></li>
+      <li id="orbit-mercury" class="orbit mercury-orbit">
+        <div class="planet mercury"></div>
+      </li>
+      <li id="orbit-venus" class="orbit venus-orbit"> 
+        <div class="planet venus"></div>
+      </li>
+      <li id="orbit-earth" class="orbit earth-orbit">
+        <div class="planet earth"></div>
+      </li>
+      <li id="orbit-mars" class="orbit mars-orbit">
+        <div class="planet mars"></div>
+      </li>
+      <li id="orbit-jupiter" class="orbit jupiter-orbit">
+        <div class="planet jupiter planet-shadow"></div>
+      </li>
+      <li id="orbit-saturn" class="orbit saturn-orbit">
+        <div class="planet saturn planet-shadow"></div>
+      </li>
+      <li id="orbit-uranus" class="orbit uranus-orbit">
+        <div class="planet uranus planet-shadow"></div>
+      </li>
+      <li id="orbit-neptune" class="orbit neptune-orbit">
+        <div class="planet neptune planet-shadow"></div>
+      </li>
+      <li id="orbit-pluto" class="orbit pluto-orbit">
+        <div class="planet pluto"></div>
+      </li>
+    </ul>    
+  </section>
 </body>
