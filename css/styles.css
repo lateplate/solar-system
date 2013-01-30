@@ -107,7 +107,7 @@ li {
   bottom: 50%;
 }
 
-.planet-shadow {
+.shadow {
   /*Liberally borrowed from Nicholas Gallagher
     http://nicolasgallagher.com/css-pseudo-element-solar-system/demo/*/
   -webkit-box-shadow:inset -10px 0 10px rgba(0,0,0,0.75);
@@ -147,7 +147,7 @@ li {
   width: 586px;
   top: 864px;
   left: 864px;
-  -webkit-animation-duration:22s
+  -webkit-animation-duration:22s;
   -moz-animation-duration:22s;
 }
 
@@ -286,6 +286,22 @@ li {
   width: 50px;
   right: -25px;
   background: #FFFFB3;
+}
+
+.saturn-gap {
+  height: 60px;
+  width: 60px;
+  right: -30px;
+  bottom: 482px;
+  background: black;
+}
+
+.saturn-rings {
+  height: 100px;
+  width: 100px;
+  right: -50px;
+  bottom: 462px;
+  background: #303030;
 }
 
 .uranus {
