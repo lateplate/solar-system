@@ -30,6 +30,12 @@ summary {
   color: white;
 }
 
+a {
+  color: #303030;
+  text-decoration: none;
+  font-weight: bold;
+}
+
  a:focus {
   outline: thin dotted;
 }
@@ -37,6 +43,7 @@ summary {
  a:active,
  a:hover {
   outline: 0;
+  color: #FF7142;
 }
 
 h1 {
@@ -73,6 +80,9 @@ li {
   display: inline;
 }
 
+p {
+  margin: 10px;
+}
 
 
 /**** Modules ****/
@@ -119,7 +129,9 @@ li {
   margin: 10px;
 }
 
-
+.thanks {
+  font-size: 13px;
+}
 
 /**** Orbits ****/
 .orbit {
